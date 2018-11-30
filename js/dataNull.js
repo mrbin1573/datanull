@@ -54,7 +54,7 @@
       $dataNullBox.style.width = settings.outerWidth;
     }
 
-    $dataNullEle.innerHTML = '';
+    $dataNullBox.innerHTML = '';
     $dataNullEle.appendChild($imgEl);
     $dataNullEle.appendChild($textEl);
     $dataNullBox.appendChild($dataNullEle);

@@ -35,7 +35,6 @@
     $dataNullEle.style.backgroundColor = settings.bgColor;
     $dataNullEle.style.textAlign = 'center';
     
-    console.log(settings.width)
     //文本
     $textEl.innerText = settings.text;
     $textEl.style.fontWeight = settings.txtWeight;

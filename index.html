@@ -52,6 +52,9 @@
       flex-shrink: 0;
       width: 49%
     }
+    .demo-display{
+      user-select: none;
+    }
     .demo-code{
       float: right;
       background-color: rgb(29, 29, 29);
@@ -73,6 +76,10 @@
     .demo-code-copy:hover{
       background-color: rgb(126, 126, 126);
     }
+    pre{
+      padding-left: 20px;
+      padding-top: 40px;
+    }
   </style>
 </head>
 <body>
@@ -85,17 +92,18 @@
     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <span id="busuanzi_container_site_uv">已经有<span id="busuanzi_value_site_uv"></span>人偷了懒</span>
     <h2>使用方法</h2>
-    <h4>1. 引入jQuery.js和dataNull.js</b>
+    <h4>1. dataNull.min.js（不需要jQuery）</b>
     <h4>2. 快速使用看下面</h4>
     <a href="https://github.com/mrbin1573/datanull"><h4>3. 自定义点这里</h4></a>
     <!-- 一个demo -->
     <div class="demo-content">
       <div class="demo-display" id="data-null1"></div>
       <div class="demo-code">
-        
-        <pre>
-  $('#id').dataNull()
-        </pre>
+<pre>
+new dataNull({
+  'eleId':'id'
+  'text': '没有数据，快滚！',
+})</pre>
       </div>
     </div>
     
@@ -103,13 +111,11 @@
     <div class="demo-content">
       <div class="demo-display" id="data-null2"></div>
       <div class="demo-code">
-        
         <pre>
-  $('#id').dataNull({
-    'text': '暂无数据',
-    'img': 2
-  })
-        </pre>
+new dataNull({
+  'eleId':'id',
+  'img': 2
+})</pre>
       </div>
     </div>
 
@@ -119,11 +125,10 @@
       <div class="demo-code">
         
         <pre>
-  $('#id').dataNull({
-    'text': '暂无数据',
-    'img': 3
-  })
-        </pre>
+new dataNull({
+  'eleId':'id',
+  'img': 3
+})</pre>
       </div>
     </div>
 
@@ -133,11 +138,10 @@
       <div class="demo-code">
         
         <pre>
-  $('#id').dataNull({
-    'text': '暂无数据',
-    'img': 4
-  })
-        </pre>
+new dataNull({
+  'eleId':'id',
+  'img': 4
+})</pre>
       </div>
     </div>
 
@@ -147,12 +151,10 @@
       <div class="demo-code">
         
         <pre>
-  $('#id').dataNull({
-    'text': '暂无数据',
-    'img': 5
-    
-  })
-        </pre>
+new dataNull({
+  'eleId':'id',
+  'img': 5
+})</pre>
       </div>
     </div>
 
@@ -162,11 +164,10 @@
       <div class="demo-code">
         
         <pre>
-  $('#id').dataNull({
-    'text': '暂无数据',
-    'img': 6
-  })
-        </pre>
+new dataNull({
+  'eleId':'id',
+  'img': 6
+})</pre>
       </div>
     </div>
     
@@ -176,11 +177,10 @@
       <div class="demo-code">
         
         <pre>
-  $('#id').dataNull({
-    'text': '暂无数据',
-    'img': 7
-  })
-        </pre>
+new dataNull({
+  'eleId':'id',
+  'img': 7
+})</pre>
       </div>
     </div>
     
@@ -190,11 +190,10 @@
       <div class="demo-code">
         
         <pre>
-  $('#id').dataNull({
-    'text': '暂无数据',
-    'img': 8
-  })
-        </pre>
+new dataNull({
+  'eleId':'id',
+  'img': 8
+})</pre>
       </div>
     </div>
     
@@ -204,11 +203,10 @@
       <div class="demo-code">
         
         <pre>
-  $('#id').dataNull({
-    'text': '暂无数据',
-    'img': 9
-  })
-        </pre>
+new dataNull({
+  'eleId':'id',
+  'img': 9
+})</pre>
       </div>
     </div>
     
@@ -218,57 +216,56 @@
       <div class="demo-code">
         
         <pre>
-  $('#id').dataNull({
-    'text': '暂无数据',
-    'img': 10
-  })
-        </pre>
+new dataNull({
+  'eleId':'id',
+  'img': 10
+})</pre>
       </div>
     </div>
   </div>
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.js"></script>
-  <script src="js/dataNull.min.js"></script>
+  <!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.js"></script> -->
+  <script src="js/dataNull.js"></script>
   <script>
-    //设置dataNull
-    $('#data-null1').dataNull({
-      'text': '暂无数据',
-    })
-    $('#data-null2').dataNull({
-      'text': '暂无数据',
-      'img': 2,
-    })
-    $('#data-null3').dataNull({
-      'text': '暂无数据',
-      'img': 3
-    })
-    $('#data-null4').dataNull({
-      'text': '暂无数据',
-      'img': 4
-    })
-    $('#data-null5').dataNull({
-      'text': '暂无数据',
-      'img': 5
-    })
-    $('#data-null6').dataNull({
-      'text': '暂无数据',
-      'img': 6
-    })
-    $('#data-null7').dataNull({
-      'text': '暂无数据',
-      'img': 7
-    })
-    $('#data-null8').dataNull({
-      'text': '暂无数据',
-      'img': 8
-    })
-    $('#data-null9').dataNull({
-      'text': '暂无数据',
-      'img': 9
-    })
-    $('#data-null10').dataNull({
-      'text': '暂无数据',
-      'img': 10
-    })
+new dataNull({
+  'text': '没有数据，快滚！',
+  'eleId':'data-null1'
+})
+new dataNull({
+  'eleId':'data-null2',
+  'img': 2
+})
+new dataNull({
+  'eleId':'data-null3',
+  'img': 3
+})
+new dataNull({
+  'eleId':'data-null4',
+  'img': 4
+})
+new dataNull({
+  'eleId':'data-null5',
+  'img': 5
+})
+new dataNull({
+  'eleId':'data-null6',
+  'img': 6
+})
+new dataNull({
+  'eleId':'data-null7',
+  'img': 7
+})
+new dataNull({
+  'eleId':'data-null8',
+  'img': 8
+})
+new dataNull({
+  'eleId':'data-null9',
+  'img': 9
+})
+new dataNull({
+  'eleId':'data-null10',
+  'img': 10
+})
   </script>
 </body>
 </html>

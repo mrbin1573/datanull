@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="数据空白页,空白模板,dataNull,dataNull.js,dataNull js, jq插件,Null,数据为空,空数据,js插件,数据为空插件,空白数据插件">
+  <title>dataNull</title>
+  <style>
+    body,html{
+      padding: 0;
+      margin: 0;
+      background-color: #dbf1f0;
+    }
+    *{
+      box-sizing: border-box;
+    }
+    header{
+      position: fixed;
+      z-index: 10;
+      top:0;
+      width: 100%;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.192);
+      height: 60px;
+      line-height: 60px;
+      color:#fff;
+      font-size: 30px;
+      text-align: center;
+      background: linear-gradient(to right, rgb(0, 140, 255), rgb(9, 127, 223));
+    }
+    .data-null-content{
+      width: 1000px;
+      padding: 30px;
+      margin: 60px auto 0;
+      background-color: #fff;
+    }
+    .demo-content{
+      width: 100%;
+      height: 250px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.178);
+      transition: .3s;
+    }
+    .demo-content:hover{
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.322);
+      border: none;
+    }
+    .demo-display,.demo-code{
+      height: 250px;
+      float: left;
+      position: relative;
+      flex-shrink: 0;
+      width: 49%
+    }
+    .demo-code{
+      float: right;
+      background-color: rgb(29, 29, 29);
+      color: #dadada;
+      font-size: 24px;
+    }
+    .demo-code-copy{
+      position: absolute;
+      right: 0px;
+      font-size: 14px;
+      width: 50px;
+      padding: 15px 0;
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+      color: rgb(238, 238, 238);
+      background-color: rgb(167, 167, 167);
+    }
+    .demo-code-copy:hover{
+      background-color: rgb(126, 126, 126);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    我只是想快点给后台老哥一个
+    <b>空数据</b>
+    页面
+  </header>
+  <div class="data-null-content">
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <span id="busuanzi_container_site_uv">已经有<span id="busuanzi_value_site_uv"></span>人偷了懒</span>
+    <h2>使用方法</h2>
+    <h4>1. 引入jQuery.js和dataNull.js</b>
+    <h4>2. 快速使用看下面</h4>
+    <a href="https://github.com/mrbin1573/datanull"><h4>3. 自定义点这里</h4></a>
+    <!-- 一个demo -->
+    <div class="demo-content">
+      <div class="demo-display" id="data-null1"></div>
+      <div class="demo-code">
+        
+        <pre>
+  $('#id').dataNull()
+        </pre>
+      </div>
+    </div>
+    
+    <!-- 一个demo -->
+    <div class="demo-content">
+      <div class="demo-display" id="data-null2"></div>
+      <div class="demo-code">
+        
+        <pre>
+  $('#id').dataNull({
+    'text': '暂无数据',
+    'img': 2
+  })
+        </pre>
+      </div>
+    </div>
+
+    <!-- 一个demo -->
+    <div class="demo-content">
+      <div class="demo-display" id="data-null3"></div>
+      <div class="demo-code">
+        
+        <pre>
+  $('#id').dataNull({
+    'text': '暂无数据',
+    'img': 3
+  })
+        </pre>
+      </div>
+    </div>
+
+    <!-- 一个demo -->
+    <div class="demo-content">
+      <div class="demo-display" id="data-null4"></div>
+      <div class="demo-code">
+        
+        <pre>
+  $('#id').dataNull({
+    'text': '暂无数据',
+    'img': 4
+  })
+        </pre>
+      </div>
+    </div>
+
+    <!-- 一个demo -->
+    <div class="demo-content">
+      <div class="demo-display" id="data-null5"></div>
+      <div class="demo-code">
+        
+        <pre>
+  $('#id').dataNull({
+    'text': '暂无数据',
+    'img': 5
+    
+  })
+        </pre>
+      </div>
+    </div>
+
+    <!-- 一个demo -->
+    <div class="demo-content">
+      <div class="demo-display" id="data-null6"></div>
+      <div class="demo-code">
+        
+        <pre>
+  $('#id').dataNull({
+    'text': '暂无数据',
+    'img': 6
+  })
+        </pre>
+      </div>
+    </div>
+    
+    <!-- 一个demo -->
+    <div class="demo-content">
+      <div class="demo-display" id="data-null7"></div>
+      <div class="demo-code">
+        
+        <pre>
+  $('#id').dataNull({
+    'text': '暂无数据',
+    'img': 7
+  })
+        </pre>
+      </div>
+    </div>
+    
+    <!-- 一个demo -->
+    <div class="demo-content">
+      <div class="demo-display" id="data-null8"></div>
+      <div class="demo-code">
+        
+        <pre>
+  $('#id').dataNull({
+    'text': '暂无数据',
+    'img': 8
+  })
+        </pre>
+      </div>
+    </div>
+    
+    <!-- 一个demo -->
+    <div class="demo-content">
+      <div class="demo-display" id="data-null9"></div>
+      <div class="demo-code">
+        
+        <pre>
+  $('#id').dataNull({
+    'text': '暂无数据',
+    'img': 9
+  })
+        </pre>
+      </div>
+    </div>
+    
+    <!-- 一个demo -->
+    <div class="demo-content">
+      <div class="demo-display" id="data-null10"></div>
+      <div class="demo-code">
+        
+        <pre>
+  $('#id').dataNull({
+    'text': '暂无数据',
+    'img': 10
+  })
+        </pre>
+      </div>
+    </div>
+  </div>
+  <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="js/dataNull.js"></script>
+  <script>
+    //设置dataNull
+    $('#data-null1').dataNull({
+      'text': '暂无数据',
+    })
+    $('#data-null2').dataNull({
+      'text': '暂无数据',
+      'img': 2,
+    })
+    $('#data-null3').dataNull({
+      'text': '暂无数据',
+      'img': 3
+    })
+    $('#data-null4').dataNull({
+      'text': '暂无数据',
+      'img': 4
+    })
+    $('#data-null5').dataNull({
+      'text': '暂无数据',
+      'img': 5
+    })
+    $('#data-null6').dataNull({
+      'text': '暂无数据',
+      'img': 6
+    })
+    $('#data-null7').dataNull({
+      'text': '暂无数据',
+      'img': 7
+    })
+    $('#data-null8').dataNull({
+      'text': '暂无数据',
+      'img': 8
+    })
+    $('#data-null9').dataNull({
+      'text': '暂无数据',
+      'img': 9
+    })
+    $('#data-null10').dataNull({
+      'text': '暂无数据',
+      'img': 10
+    })
+  </script>
+</body>
+</html>

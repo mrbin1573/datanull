@@ -19,6 +19,7 @@
     settings.bgColor = typeof (options.bgColor) == 'undefined' ? '#fff' : options.bgColor;
     settings.txtColor = typeof (options.txtColor) == 'undefined' ? '#3e3e3e' : options.txtColor;
     settings.txtSize = typeof (options.txtSize) == 'undefined' ? '24px' : options.txtSize;
+    settings.txtTop = typeof (options.txtTop) == 'undefined' ? '10px' : options.txtTop;
     settings.txtWeight = typeof (options.txtWeight) == 'undefined' ? 'bold' : options.txtWeight;
     settings.outerWidth = typeof (options.outerWidth) == 'undefined' ? '' : options.outerWidth;
     settings.outerHeight = typeof (options.outerHeight) == 'undefined' ? '' : options.outerHeight;
@@ -40,6 +41,7 @@
     $textEl.style.fontWeight = settings.txtWeight;
     $textEl.style.fontSize = settings.txtSize;
     $textEl.style.color = settings.txtColor;
+    $textEl.style.marginTop = settings.txtTop;
     
     // 图片
     $imgEl.src = settings.img;

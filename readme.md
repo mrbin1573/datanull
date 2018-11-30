@@ -13,6 +13,7 @@
 | top      | 距离容器上部距离         | 50px    |string |
 | img      | 显示图片，默认值为1~10（必须是数字），也可传图片路径（string）|1|number/string|
 | bgColor  | 背景颜色                | #fff    |string |
+| txtTop| 文字上距离                | 10px    |string |
 | txtColor | 文字颜色                | #3e3e3e |string |
 | txtWeight| 文字粗细                | bold    |string |
 | outerWidth| 外部容器宽度            | 空     |string |

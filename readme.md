@@ -4,7 +4,7 @@
 
 [实例](https://mrbin1573.github.io/datanull/)
 
-| 参数     | 说明                   | 默认值  | 类型 |
+| 参数/方法     | 说明                   | 默认值  | 类型 |
 | ------   | ------                 | ------  | ------ |
 | text     | 显示的文字              | 暂无数据 | string |
 | width    | 宽度(不改变外层容器大小) | 100%    |string |
@@ -18,7 +18,21 @@
 | txtWeight| 文字粗细                | bold    |string |
 | outerWidth| 外部容器宽度            | 空     |string |
 | outerHeight| 外部容器高度            | 空     |string |
+| empty() | 移除`数据为空`页面            |      |function |
 
+* 清空方法
+1.清空单独个
+```js
+var test = new dataNull({
+  'eleId':'id',
+  'text': '没有数据，快滚！'
+});
+test.empty();
+```
+2.清空全部
+```js
+$('.datanull-content').innerHTML('');
+```
 > width/height是指在 选中容器内部 的宽高
 
 

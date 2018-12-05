@@ -29,6 +29,7 @@
     var $imgEl = document.createElement('img');
 
     // 空数据容器
+    $dataNullEle.setAttribute('class','datanull-content');
     $dataNullEle.style.width = settings.width;
     $dataNullEle.style.height = settings.height;
     $dataNullEle.style.marginTop = settings.top;
@@ -59,6 +60,11 @@
     $dataNullEle.appendChild($imgEl);
     $dataNullEle.appendChild($textEl);
     $dataNullBox.appendChild($dataNullEle);
+
+    // 清空方法
+    this.empty = function(){
+      $dataNullEle.remove();
+    }
   }
 
   window.dataNull = dataNull;
